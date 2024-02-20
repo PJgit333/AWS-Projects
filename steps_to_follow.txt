@@ -1,0 +1,18 @@
+1. Install serverless framework
+	npm install -g serverless
+
+2. Create a new serverless project
+	serverless create --template aws-nodejs --path image-resizer
+	cd image-resizer
+
+3. Install dependencies
+	npm install sharp
+
+4, Create a .yaml file
+	serverless.yaml
+
+5. Write a lambda function using python
+	handler.py
+
+6. Deploy
+	serverless deploy

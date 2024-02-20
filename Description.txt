@@ -1,0 +1,8 @@
+This application will automatically resize images uploaded to an S3 bucket using AWS Lambda.
+
+Tools and services used:
+
+Serverless Framework: To define and deploy serverless functions.
+AWS Lambda: To run the image resizing code.
+Amazon S3: To store the original and resized images.
+Node.js with sharp library: For image resizing.

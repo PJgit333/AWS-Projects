@@ -1,0 +1,18 @@
+service: image-resizer
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  imageResizer:
+    handler: handler.resizeImage
+    events:
+      - s3:
+          bucket: my-upload-bucket
+          event: s3:ObjectCreated:*
+          rules:
+            - suffix: .jpg
+            - suffix: .jpeg
+            - suffix: .png
+
